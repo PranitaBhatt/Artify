@@ -133,7 +133,7 @@ const addCartToHTML = (products) => {
                 ${info.image ? `<img src="${info.image}">` : '<div class="no-image">No Image</div>'}
               </div>
               <div class="name">${info.name || 'Unknown Product'}</div>
-              <div class="totalPrice">$${(info.price || 0) * item.quantity}</div>
+              <div class="totalPrice">₹${(info.price || 0) * item.quantity}</div>
             <div class="quantity">
                 <span class="minus"><</span>
                 <span>${item.quantity}</span>
@@ -193,9 +193,9 @@ const changeQuantityCart = (product_id, type) => {
 document.addEventListener("DOMContentLoaded", function() {
     const checkoutBtn = document.getElementById("checkout-btn");
 
-    // Event listener for clicking on the Checkout button
-    checkoutBtn.addEventListener("click", function() {
-        // Redirect to cart.html
+    // Event listener for checkout button
+    checkoutBtn.addEventListener("click", () => {
+        // Redirect to the cart.html page
         window.location.href = 'cart.html';
     });
 });

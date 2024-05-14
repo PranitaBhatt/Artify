@@ -1,6 +1,6 @@
 <?php
 // Database connection parameters
-$host = "localhost:3308"; // Host name
+$host = "localhosts"; // Host name
 $username = "root"; // MySQL username
 $password = ""; // MySQL password
 $database ="artify"; // Database name
